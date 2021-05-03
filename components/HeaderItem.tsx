@@ -1,14 +1,13 @@
 
 interface HeaderItemProps {
     title: string
-    icon: SVGSVGElement
+    Icon: any
 }
 
 function HeaderItem(props: HeaderItemProps) {
     return (
         <div>
             {props.title}
-            {props.icon}
         </div>
     )
 }
