@@ -12,9 +12,9 @@ const Header = () => {
         <header>
             <div>
                 {/* <HeaderItem title='Home' Icon={'HomeOutline'}/> */}
+                <HomeOutline/>
             </div>
 
-<HomeOutline/>
             <Image src='https://links.papareact.com/ua6' width={200} height={100} className='object-contain'/>
         </header>
     )
