@@ -8,8 +8,8 @@ interface HeaderItemProps {
 function HeaderItem({title, Icon}: HeaderItemProps) {
     return (
         <div>
-            <Icon/>
-            {title}
+            <Icon className='h-1 mb-1'/>
+            <p className='opacity-0  hover:opacity-100 tracking-widest'>{title}</p>
         </div>
     )
 }
