@@ -2,9 +2,11 @@ import Image from 'next/image'
 import HeaderItem from './HeaderItem'
 
 
-// import {BadgeCheckOutline, CollectionOutline, HomeOutline, LightningBoltOutline, SearchOutline, UserOutline} from '@graywolfai/react-heroicons'
+// import {, HomeOutline, LightningBoltOutline, SearchOutline, UserOutline} from '@graywolfai/react-heroicons'
 
 import {HiOutlineCollection} from 'react-icons/hi'
+import {BiBadgeCheck, BiSearch} from 'react-icons/bi'
+import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 
 const Header = () => {
 
@@ -12,7 +14,6 @@ const Header = () => {
         <header>
             <div>
                 {/* <BadgeCheckOutline/> */}
-                <AiFillAccountBook/>
                 <HeaderItem title='Home' Icon={HiOutlineCollection}/>
             </div>
 
