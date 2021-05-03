@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
     return <Component {...pageProps} />
 }
 
