@@ -1,13 +1,13 @@
 
 interface HeaderItemProps {
     title: string
-    Icon: any
+    Icon?: any
 }
 
-function HeaderItem(props: HeaderItemProps) {
+function HeaderItem({title}: HeaderItemProps) {
     return (
         <div>
-            {props.title}
+            {title}
         </div>
     )
 }
