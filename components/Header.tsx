@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <header>
             <div>
-                <HeaderItem title='Home' Icon={'HomeOutline'}/>
+                {/* <HeaderItem title='Home' Icon={'HomeOutline'}/> */}
             </div>
 
 <HomeOutline/>
