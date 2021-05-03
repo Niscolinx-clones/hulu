@@ -7,8 +7,8 @@ const IndexPage = () => (
       <title>Hulu clone</title>
     </Head>
 
-    
-    <h1>The Home page 👋</h1>
+
+    <h1>The Home page</h1>
     <p>
       <Link href="/about">
         <a>Go to About page</a>
