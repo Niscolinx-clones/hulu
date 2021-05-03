@@ -3,8 +3,6 @@ import HeaderItem from './HeaderItem'
 
 
 
-import {BadgeCheckOutline, CollectionOutline, HomeOutline, LightningBoltOutline, SearchOutline, UserOutline} from '@graywolfai/react-heroicons'
-
 import {AiFillAccountBook} from 'react-icons/ai'
 
 const Header = () => {
@@ -12,7 +10,6 @@ const Header = () => {
     return (
         <header>
             <div>
-                {/* <HeaderItem title='Home' Icon={'HomeOutline'}/> */}
                 {/* <BadgeCheckOutline/> */}
                 <AiFillAccountBook/>
             </div>
