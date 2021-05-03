@@ -4,9 +4,10 @@ interface HeaderItemProps {
     Icon?: any
 }
 
-function HeaderItem({title}: HeaderItemProps) {
+function HeaderItem({title, icon}: HeaderItemProps) {
     return (
         <div>
+            <icon/>
             {title}
         </div>
     )
