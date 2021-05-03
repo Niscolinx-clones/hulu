@@ -1,13 +1,14 @@
+import { IconType } from "react-icons"
 
 interface HeaderItemProps {
     title: string
-    Icon?: any
+    Icon: IconType
 }
 
-function HeaderItem({title, icon}: HeaderItemProps) {
+function HeaderItem({title, Icon}: HeaderItemProps) {
     return (
         <div>
-            <icon/>
+            <Icon/>
             {title}
         </div>
     )

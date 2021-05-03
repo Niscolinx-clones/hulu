@@ -14,7 +14,7 @@ const Header = () => {
         <header>
             <div>
                 {/* <BadgeCheckOutline/> */}
-                <HeaderItem title='Home' icon={HiOutlineCollection}/>
+                <HeaderItem title='Home' Icon={HiOutlineCollection}/>
             </div>
 
             <Image src='https://links.papareact.com/ua6' width={200} height={100} className='object-contain'/>
