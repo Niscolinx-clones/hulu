@@ -7,9 +7,9 @@ interface HeaderItemProps {
 
 function HeaderItem({title, Icon}: HeaderItemProps) {
     return (
-        <div>
-            <Icon className='h-8 mb-1'/>
-            <p className='opacity-0  hover:opacity-100 tracking-widest'>{title}</p>
+        <div className='flex flex-col group'>
+            <Icon className='h-8 mb-19 group-hover:animate-bounce'/>
+            <p className='opacity-100 hover:opacity-100 tracking-widest'>{title}</p>
         </div>
     )
 }
