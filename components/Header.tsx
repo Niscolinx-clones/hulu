@@ -17,6 +17,7 @@ const Header = () => {
                 <HeaderItem title='Home' Icon={HiOutlineCollection}/>
               
             </div>
+            <p className='cursor-pointer'>Testing it out</p>
 
             <Image src='https://links.papareact.com/ua6' width={200} height={100} className='object-contain'/>
         </header>
