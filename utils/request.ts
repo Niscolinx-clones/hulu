@@ -12,32 +12,32 @@ const request:TmdbRequest =  {
         url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`
     },
     fetchActionMovies: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+        title: 'Action',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
     },
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    fetchComedyMovies: {
+        title: 'Comedy',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
     },
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    fetchHorrorMovies: {
+        title: 'Horror',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=27`
     },
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    fetchRomanceMovies: {
+        title: 'Romance',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`
     },
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    fetchMystery: {
+        title: 'Mystery',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=9648`
     },
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    fetchSciFi: {
+        title: 'Sci-Fi',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=878`
+    },
+    fetchWestern: {
+        title: 'Western',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
     }
 }
 
