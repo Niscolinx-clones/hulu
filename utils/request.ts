@@ -6,7 +6,27 @@ const request:TmdbRequest =  {
     fetchTrending: {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
+    },
+    fetchTopRated: {
+        title: 'Top Rated',
+        url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`
+    },
+    fetchActionMovies: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    },
     fetchTrending: {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
@@ -14,27 +34,7 @@ const request:TmdbRequest =  {
     fetchTrending: {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
-    fetchTrending: {
-        title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
-    }
+    },
     fetchTrending: {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
