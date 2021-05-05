@@ -41,16 +41,12 @@ const request:TmdbRequest =  {
     },
     fetchAnimation: {
         title: 'Animation',
-        url: `/discover/movie?api_key=${API_KEY}&with_genres=37`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=16`
     },
-    fetchWestern: {
-        title: 'Western',
-        url: `/discover/movie?api_key=${API_KEY}&with_genres=37`
-    },
-    fetchWestern: {
-        title: 'Western',
-        url: `/discover/movie?api_key=${API_KEY}&with_genres=37`
-    },
+    fetchTV: {
+        title: 'TV Movie',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
+    }
 }
 
 export default request
