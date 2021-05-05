@@ -7,6 +7,38 @@ const request:TmdbRequest =  {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
     }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
+    fetchTrending: {
+        title: 'Trending',
+        url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    }
 }
 
 export default request
