@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const IndexPage = () => (
   <>
@@ -8,6 +9,8 @@ const IndexPage = () => (
     </Head>
 
       <Header/>
+
+      <Nav/>
 
    
   </>

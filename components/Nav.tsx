@@ -1,7 +1,13 @@
+import request from "../utils/request"
+import {TmdbRequest} from '../interfaces/requestParams'
+
 const Nav = () => {
     return (
         <nav>
-            <p>The nav</p>
+            {Object.entries(request).map(([key, {title, url}]) => (
+                
+                <h2>{title}</h2>
+            ))  }
         </nav>
     )
 }
