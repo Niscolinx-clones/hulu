@@ -10,10 +10,19 @@ import requests from '../utils/request'
 
 
 
+interface Iresult {
+    [key: string]: string
+}
+interface IndexProps {
+    results: Array<Iresult>
+}
 
+const IndexPage = ({results}: IndexProps) => {
+    console.log(results)
 
-const IndexPage = (props: AppProps) => {
-    console.log(props.results)
+    results.map(e => {
+        console.log(e.title)
+    })
     return (
         <>
             <Head>
