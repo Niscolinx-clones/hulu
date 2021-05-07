@@ -27,7 +27,7 @@ const IndexPage = ({results}: IndexProps) => {
 
             <Nav />
 
-            <Results />
+            <Results results={results}/>
         </>
     )
 }
