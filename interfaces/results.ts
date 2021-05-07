@@ -6,7 +6,5 @@ export interface IndexProps {
 }
 
 export interface IThumbnail {
-    result: {
-        [key: string]: string | number | boolean | Array<string> | Array<number>
-    }
+    result: Iresult
 }
