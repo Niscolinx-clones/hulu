@@ -8,7 +8,8 @@ import Nav from '../components/Nav'
 import Results from '../components/Results'
 import requests from '../utils/request'
 
-import { TmdbRequest } from "../interfaces/requestParams"
+
+
 
 
 const IndexPage = (props: AppProps) => {
@@ -30,13 +31,20 @@ const IndexPage = (props: AppProps) => {
 
 export default IndexPage
 
+interface TmdbRequest {
+    [key:string]: {
+        title: string
+        url: string
+    }
+}
+
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    
-    const genre: []TmdbRequest = context.query.genre
+
+    const genre = context.query.genre
 
     const request = await fetch(
         `https://api.themoviedb.org/3${
-            requests[genre]?.url || requests.fetchTrending.url
+            requests[genre as keyof typeof requests]?.url || requests.fetchTrending.url
         }`
     ).then((res) => res.json())
 
