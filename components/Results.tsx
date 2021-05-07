@@ -1,4 +1,4 @@
-const Results = () => {
+const Results = ({results}) => {
     return (<div>
         The Results
     </div>)
