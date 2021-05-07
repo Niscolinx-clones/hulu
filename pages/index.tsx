@@ -8,6 +8,9 @@ import Nav from '../components/Nav'
 import Results from '../components/Results'
 import requests from '../utils/request'
 
+import { TmdbRequest } from "../interfaces/requestParams"
+
+
 const IndexPage = (props: AppProps) => {
     console.log(props)
     return (
@@ -28,7 +31,8 @@ const IndexPage = (props: AppProps) => {
 export default IndexPage
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const genre:string | []s = context.query.genre
+    
+    const genre: []TmdbRequest = context.query.genre
 
     const request = await fetch(
         `https://api.themoviedb.org/3${
