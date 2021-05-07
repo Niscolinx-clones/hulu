@@ -4,7 +4,6 @@ import Thumbnail from "./Thumbnail"
 const Results = ({results}: IndexProps) => {
     return (<div>
         {results.map((result: Iresult) => {
-            console.log('result from results', result)
             return <Thumbnail result={result}/>
         })}
     </div>)
