@@ -2,7 +2,7 @@ import { TmdbRequest } from "../interfaces/requestParams"
 
 const API_KEY = process.env.API_KEY
 
-const request:TmdbRequest =  {
+const requests:TmdbRequest =  {
     fetchTrending: {
         title: 'Trending',
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
@@ -49,4 +49,4 @@ const request:TmdbRequest =  {
     }
 }
 
-export default request
+export default requests
