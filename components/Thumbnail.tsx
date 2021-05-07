@@ -22,7 +22,7 @@ const Thumbnail = ({ result }: IThumbnail) => {
                 <h2>{result.title || result.orginal_name}</h2>
                 <p>
                     {result.media_type && `${result.media_type} `}{' '}
-                    {result.release_date || result.first_air_date} <BiLike />{' '}
+                    {result.release_date || result.first_air_date} <BiLike className='h-5 mx-2'/>{' '}
                     {result.vote_count}
                 </p>
             </div>
