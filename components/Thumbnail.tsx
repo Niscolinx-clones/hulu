@@ -19,7 +19,7 @@ const Thumbnail = ({ result }: IThumbnail) => {
             />
             <div className='p-2'>
                 <p className='truncate max-w-md'>{result.overview}</p>
-                <h2>{result.title || result.orginal_name}</h2>
+                <h2 className='mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold'>{result.title || result.orginal_name}</h2>
                 <p className='flex items-center opacity-0 group-hover:opacity-100'>
                     {result.media_type && `${result.media_type} .`}{' '}
                     {result.release_date || result.first_air_date}. {''} <BiLike className='h-5 mx-2'/>{' '}
