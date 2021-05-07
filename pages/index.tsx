@@ -20,6 +20,6 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const getServerSideProps = context => {
+export const getServerSideProps = async (context) => {
     const query = context.query.genre
 }
