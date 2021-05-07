@@ -1,6 +1,8 @@
-const Results = ({results}) => {
+const Results = ({results}: IndexProps) => {
     return (<div>
-        The Results
+        {results.map(e => {
+            e.title
+        })}
     </div>)
 }
 
