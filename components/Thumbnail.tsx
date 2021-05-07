@@ -1,8 +1,5 @@
-const Thumbnail = () => {
-    return (
-        <div>This is the Thumbnail</div>
-
-    )
+const Thumbnail = ({ result }) => {
+    return <div>{result}</div>
 }
 
 export default Thumbnail

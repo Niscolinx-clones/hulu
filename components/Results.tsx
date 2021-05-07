@@ -1,7 +1,9 @@
+import Thumbnail from "./Thumbnail"
+
 const Results = ({results}: IndexProps) => {
     return (<div>
-        {results.map(e => {
-           return e.title
+        {results.map(result => {
+            return <Thumbnail results={result}/>
         })}
     </div>)
 }
