@@ -2,15 +2,7 @@ import React from 'react'
 import request from '../utils/request'
 import {useRouter} from 'next/router'
 
-interface TmdbRequestArray {
-    [index: number]: [
-        string,
-        {
-            title: string
-            url: string
-        }
-    ]
-}
+
 
 const Nav = () => {
     const router = useRouter()

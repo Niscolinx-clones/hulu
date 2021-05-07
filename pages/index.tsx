@@ -12,8 +12,8 @@ import requests from '../utils/request'
 
 
 
-const IndexPage = (props: AppProps) => {
-    console.log(props)
+const IndexPage = ({results}: AppProps) => {
+    console.log(results)
     return (
         <>
             <Head>
