@@ -1,7 +1,5 @@
 export interface Iresult {
-
-        title: string
-        name: string
+    [key: string]: string | number | boolean | Array<string> | Array<number>
     
 }
 export interface IndexProps {
