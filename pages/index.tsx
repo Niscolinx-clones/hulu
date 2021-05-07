@@ -28,7 +28,7 @@ const IndexPage = (props: AppProps) => {
 export default IndexPage
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const genre = context.query.genre
+    const genre:string | []s = context.query.genre
 
     const request = await fetch(
         `https://api.themoviedb.org/3${
