@@ -1,9 +1,21 @@
 import { Iresult } from "../interfaces/results"
+import Image from 'next/image'
 
-const Thumbnail = (props: any) => {
-    console.log(props)
+const Thumbnail = ({result}: any) => {
+    console.log(result)
+
+    const BASE_URL = 'https://image.tmdb.org/t/p/original/'
     
-    return (<div>{props.title}</div>)
+    return (
+        <div>
+            <Image
+                layout='responsive'
+                height={1000}
+                width={1920}
+                src={`${BASE_URL}${result.backdrop_path || result.poster_path}`}
+            />
+        </div>
+    )
 }
 
 export default Thumbnail
