@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { GetServerSideProps } from 'next'
-import { AppProps } from 'next/app'
-
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
@@ -11,18 +9,14 @@ import requests from '../utils/request'
 
 
 interface Iresult {
-    [key: string]: string
+    [key: string]: string | number | boolean | Array<string> | Array<number>
 }
 interface IndexProps {
     results: Array<Iresult>
 }
 
 const IndexPage = ({results}: IndexProps) => {
-    console.log(results)
-
-    results.map(e => {
-        console.log(e.title)
-    })
+   
     return (
         <>
             <Head>
