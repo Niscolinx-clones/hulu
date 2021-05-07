@@ -20,7 +20,11 @@ const Thumbnail = ({ result }: IThumbnail) => {
             <div className='p-2'>
                 <p className='truncate max-w-md'>{result.overview}</p>
                 <h2>{result.title || result.orginal_name}</h2>
-                
+                <p>
+                    {result.media_type && `${result.media_type} `}{' '}
+                    {result.release_date || result.first_air_date} <BiLike />{' '}
+                    {result.vote_count}
+                </p>
             </div>
         </div>
     )
