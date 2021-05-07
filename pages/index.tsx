@@ -31,12 +31,7 @@ const IndexPage = (props: AppProps) => {
 
 export default IndexPage
 
-interface TmdbRequest {
-    [key:string]: {
-        title: string
-        url: string
-    }
-}
+
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
 
@@ -44,7 +39,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     const request = await fetch(
         `https://api.themoviedb.org/3${
-            requests[genre as keyof requests]?.url || requests.fetchTrending.url
+            requests[genre as keyof typeof requests]?.url || requests.fetchTrending.url
         }`
     ).then((res) => res.json())
 
