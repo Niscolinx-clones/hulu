@@ -1,6 +1,9 @@
-interface Iresult {
-    [key: string]: string | number | boolean | Array<string> | Array<number>
+export interface Iresult {
+
+        title: string
+        name: string
+    
 }
-interface IndexProps {
+export interface IndexProps {
     results: Array<Iresult>
 }
