@@ -6,19 +6,22 @@ import Nav from '../components/Nav'
 import Results from '../components/Results'
 import requests from '../utils/request'
 
-const IndexPage = () => (
-    <>
-        <Head>
-            <title>Hulu clone</title>
-        </Head>
+const IndexPage = (props) => {
+    console.log(props)
+    return (
+        <>
+            <Head>
+                <title>Hulu clone</title>
+            </Head>
 
-        <Header />
+            <Header />
 
-        <Nav />
+            <Nav />
 
-        <Results />
-    </>
-)
+            <Results />
+        </>
+    )
+}
 
 export default IndexPage
 
@@ -26,14 +29,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const genre = context.query.genre
 
     const request = await fetch(
-        `https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`
-    ).then(res => res.json())
-        
-    
+        `https://api.themoviedb.org/3${
+            requests[genre]?.url || requests.fetchTrending.url
+        }`
+    ).then((res) => res.json())
 
     return {
         props: {
-            results: request.result
-        }
+            results: request.results,
+        },
     }
 }
