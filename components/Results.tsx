@@ -1,7 +1,7 @@
 const Results = ({results}: IndexProps) => {
     return (<div>
         {results.map(e => {
-            e.title
+           return e.title
         })}
     </div>)
 }
