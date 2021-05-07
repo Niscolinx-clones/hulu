@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import {GetServerSideProps} from 'next'
+
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Results from '../components/Results'
+
 
 const IndexPage = () => (
     <>
@@ -20,6 +23,8 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps:GetServerSideProps = async (context) => {
     const query = context.query.genre
+
+    const request = await fetch()
 }
