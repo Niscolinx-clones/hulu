@@ -27,5 +27,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     const request = await fetch(
         `https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`
-    ) 
+    ).then(res => res.json())
+        .then(resData => {
+        console.log({resData})
+    })
+
+    return {
+        props: {
+            name: 'James'
+        }
+    }
 }
