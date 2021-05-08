@@ -13,5 +13,4 @@ export interface IndexProps {
 
 export interface IThumbnail {
     result: Iresult
-    key: string
 }
