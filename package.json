@@ -8,21 +8,21 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "D": "^1.0.0",
+    "autoprefixer": "^10.2.5",
     "next": "latest",
+    "postcss": "^8.2.14",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "tailwind-scrollbar-hide": "^1.0.3"
+    "tailwind-scrollbar-hide": "^1.0.3",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
-    // "autoprefixer": "^10.0.4",
-    // "postcss": "^8.1.10",
-    // "tailwindcss": "^2.1.1",
     "typescript": "4.0"
   },
   "license": "MIT"
 }
-
