@@ -17,7 +17,7 @@ const requests:TmdbRequest =  {
     },
     fetchComedyMovies: {
         title: 'Comedy',
-        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=35`
     },
     fetchHorrorMovies: {
         title: 'Horror',
