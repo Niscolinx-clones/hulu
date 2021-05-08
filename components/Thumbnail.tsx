@@ -2,15 +2,15 @@ import {IThumbnail} from "../interfaces/results"
 import Image from 'next/image'
 import {BiLike} from 'react-icons/bi'
 import React from "react"
+import {forwardRef} from 'react'
 
 
-
-const Thumbnail = ({ result }: IThumbnail) => {
+const Thumbnail = forwardRef(({ result }: IThumbnail, ref) => {
 
     const BASE_URL = 'https://image.tmdb.org/t/p/original/'
     
     return (
-        <div className='group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
+        <div ref={ref} className='group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
             <Image
                 layout='responsive'
                 height={1000}
@@ -28,6 +28,6 @@ const Thumbnail = ({ result }: IThumbnail) => {
             </div>
         </div>
     )
-}
+})
 
 export default Thumbnail
