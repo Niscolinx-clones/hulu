@@ -14,4 +14,5 @@ export interface IndexProps {
 
 export interface IThumbnail {
     result: Iresult
+    hello: number
 }
