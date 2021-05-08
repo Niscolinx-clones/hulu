@@ -8,7 +8,6 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "D": "^1.0.0",
     "autoprefixer": "^10.2.5",
     "next": "latest",
     "postcss": "^8.2.14",
