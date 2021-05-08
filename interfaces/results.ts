@@ -6,7 +6,6 @@ export interface Iresult {
         | boolean
         | Array<string>
         | Array<number>
-        | null
 }
 export interface IndexProps {
     results: Array<Iresult>
@@ -14,5 +13,5 @@ export interface IndexProps {
 
 export interface IThumbnail {
     result: Iresult
-    hello: number
+    key: number
 }
